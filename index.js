@@ -28,4 +28,4 @@ client.on("message", (message) => {
   }
 });
 
-client.login(process.env.DJS_TOKEN); // Login Into Discord Bot
+client.login(process.env.token); // Login Into Discord Bot
