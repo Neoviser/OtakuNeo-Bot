@@ -18,16 +18,12 @@ If you have forked or cloned this repo, please make sure to install the dependen
 npm install
 ```
 
-To run the bot, replace the process.env.(DJS_TOKEN) with your own. Then either run the included .bat file or do this in console:
+To run the bot, replace the process.env.token with your own. Then either run the included .bat file or do this in console:
 
 ```
 node .
 ```
 
-or
+---
 
-```
-node index.js
-```
-
-That's done. Have fun with it.
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
