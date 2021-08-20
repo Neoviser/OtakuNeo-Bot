@@ -1,3 +1,6 @@
+const Discord = require("discord.js");
+const client = Discord.Client();
+
 client.on("message", (message) => {
   // Reply when Pinged
   if (message.mentions.users.has(client.user.id) && !message.author.bot) {
