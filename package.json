@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Neo#0442",
-  "license": "Apache License 2.0",
+  "license": "MIT",
   "dependencies": {
     "animequotes": "^1.1.2",
     "axios": "^0.21.1",

@@ -17,7 +17,7 @@ module.exports = async (client) => {
       },
       {
         name: "Database", // name
-        value: ["Connected to Mongo"], // values
+        value: ["null"], // values
       },
     ],
     68,
@@ -29,7 +29,7 @@ module.exports = async (client) => {
   log(
     [
       {
-        value: ["Connected to Atlas"],
+        value: ["null"],
       },
     ],
     68,
