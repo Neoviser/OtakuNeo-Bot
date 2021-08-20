@@ -32,6 +32,7 @@
     "node-fetch": "^2.6.1",
     "node-kitsu": "^1.1.1",
     "node-superfetch": "^0.2.3",
+    "nodemon": "^2.0.12",
     "nuggies": "^1.2.51",
     "os": "^0.1.2",
     "parse-ms": "^3.0.0",
