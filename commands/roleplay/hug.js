@@ -1,4 +1,3 @@
-const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "hug",
   description: "hug a user in anime!",
