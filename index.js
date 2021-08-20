@@ -28,4 +28,4 @@ client.on("message", (message) => {
   }
 });
 
-client.login("NzkxNDkyNjk0ODUyNzYzNjQ5.X-P9Aw.ORIFxrzERQk1nimaNNorpsfabwY"); // Login Into Discord Bot
+client.login(process.env.DJS_TOKEN); // Login Into Discord Bot
