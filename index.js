@@ -1,9 +1,14 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
+const client = new Discord.Client({
+  allowedMentions: {
+    // set repliedUser value to `false` to turn off the mention by default
+    repliedUser: false,
+  },
+});
 const handler = require("./handlers/commands.js");
 const fs = require("fs");
-require("discord-buttons")(client);
 client.commands = new Discord.Collection();
+require("./functions/extendedMessage");
 
 handler(client);
 
@@ -21,7 +26,7 @@ fs.readdir("./events", (err, files) => {
 client.on("message", (message) => {
   // Reply when Pinged
   if (message.mentions.users.has(client.user.id) && !message.author.bot) {
-    message.reply(
+    message.inlineReply(
       "Hello! My prefix is `=`! If you need help, type `=help`! ;3"
     );
     return;

@@ -1,3 +1,4 @@
+const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "hug",
   description: "hug a user in anime!",
@@ -26,8 +27,8 @@ module.exports = {
         `${message.author} **gave** ${taggedUser} **a hug!** `
       );
     } else {
-      return message.channel.send("Please specify a member to hug!");
+      return message.inlineReply("Sorry~ You need to specify a member to hug!");
     }
-    message.channel.send(embed);
+    message.inlineReply(embed);
   },
 };

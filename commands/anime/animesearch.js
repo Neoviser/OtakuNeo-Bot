@@ -1,9 +1,5 @@
-const {
-  get
-} = require("request-promise-native");
-const {
-  MessageEmbed
-} = require("discord.js")
+const { get } = require("request-promise-native");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "anime",
@@ -12,11 +8,8 @@ module.exports = {
   description: "Get anime information",
   cooldown: 5,
   execute: (message, args) => {
-
-
-
     if (!args.length) {
-      return message.channel.send("Please give a valid anime!")
+      return message.inlineReply("Please give a valid anime!");
     }
     //DEFINE OPTIONS
 
@@ -24,43 +17,32 @@ module.exports = {
       url: `https://kitsu.io/api/edge/anime?filter[text]=${args.join(" ")}`,
       method: `GET`,
       headers: {
-        'Content-Type': "application/vnd.api+json",
-        'Accept': "application/vnd.api+json"
-
+        "Content-Type": "application/vnd.api+json",
+        Accept: "application/vnd.api+json",
       },
-      json: true
-    }
+      json: true,
+    };
 
+    message.inlineReply("Please wait while I fetch info...").then((msg) => {
+      get(option).then((body) => {
+        try {
+          let embed = new MessageEmbed()
+            .setTitle(body.data[0].attributes.titles.en)
+            .setColor("RED")
+            .setDescription(body.data[0].attributes.synopsis)
+            .setThumbnail(body.data[0].attributes.posterImage.original)
+            .addField("Ratings", body.data[0].attributes.averageRating)
+            .addField("TOTAL EPISODES", body.data[0].attributes.episodeCount);
+          //.setImage(body.data[0].attributes.coverImage.large)
+          //try it
 
-    message.channel.send("Fetching info...").then(msg => {
-      get(option).then(body => {
-          try {
-            let embed = new MessageEmbed()
-              .setTitle(body.data[0].attributes.titles.en)
-              .setColor("RED")
-              .setDescription(body.data[0].attributes.synopsis)
-              .setThumbnail(body.data[0].attributes.posterImage.original)
-              .addField("Ratings", body.data[0].attributes.averageRating)
-              .addField("TOTAL EPISODES", body.data[0].attributes.episodeCount)
-            //.setImage(body.data[0].attributes.coverImage.large)
-            //try it
-
-
-            message.channel.send(embed)
-            msg.delete();
-
-          } catch (err) {
-            msg.delete();
-            return message.channel.send("Unable to find this anime");
-          }
-
-
-
+          message.inlineReply(embed);
+          msg.delete();
+        } catch (err) {
+          msg.delete();
+          return message.inlineReply("Unable to find this anime..");
         }
-
-      )
-    })
-
-  }
-
-}
+      });
+    });
+  },
+};

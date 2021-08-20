@@ -20,6 +20,6 @@ module.exports = {
         `Requested By: ${message.author.tag}`,
         `${message.author.displayAvatarURL()}`
       );
-    message.channel.send({ embed });
+    message.inlineReply(embed);
   },
 };

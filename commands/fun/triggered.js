@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
-const {
-  MessageEmbed
-} = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const DIG = require("discord-image-generation");
 
 module.exports = {
@@ -10,8 +8,6 @@ module.exports = {
   cooldown: 5,
 
   execute: async (message, args) => {
-
-
     let user;
     if (message.mentions.users.first()) {
       user = message.mentions.users.first();
@@ -23,10 +19,10 @@ module.exports = {
 
     let avatar = await user.displayAvatarURL({
       dynamic: false,
-      format: "png"
+      format: "png",
     });
     let image = await new DIG.Triggered().getImage(avatar);
     let attach = new Discord.MessageAttachment(image, "triggered.gif");
-    return message.channel.send(attach);
-  }
+    return message.inlineReply(attach);
+  },
 };
