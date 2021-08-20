@@ -48,7 +48,8 @@ module.exports = {
         },
         {
           name: "💢 Anime",
-          value: "animequotes, animesearch, animecharacter",
+          value:
+            "animequotes, animesearch, animecharacter, foxgirl, neko, nekof",
           inline: false,
         },
         {
