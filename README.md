@@ -6,7 +6,6 @@
 
 Once was originally a private repo, I decided to make it open sourced because why not. This bot comes packed full with features such as:
 
-- Moderation
 - Utility
 - Anime
 - Roleplay
