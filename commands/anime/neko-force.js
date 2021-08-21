@@ -9,7 +9,7 @@ module.exports = {
   async execute(message, args, client) {
     if (!message.member.hasPermission("ADMINISTRATOR") || !message.guild.owner)
       return message.channel.send(
-        "``Sorry~ You don't have the following permissions to do this action!``"
+        "`Sorry~ You don't have the following permissions to do this action!`"
       );
     const { body } = await superagent.get("https://nekos.life/api/neko");
     link = body.neko;
