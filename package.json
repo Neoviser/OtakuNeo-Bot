@@ -45,7 +45,9 @@
     "superagent": "^6.1.0",
     "twitter-api.js": "0.0.12",
     "txtgen": "^2.2.8",
-    "weky": "^3.1.1",
     "youtube-sr": "^4.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
   }
 }

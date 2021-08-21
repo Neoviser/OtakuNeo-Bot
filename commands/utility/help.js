@@ -38,7 +38,7 @@ module.exports = {
         },
         {
           name: "🎮 Games",
-          value: "8ball, rps, slots, fasttype, would-you-rather",
+          value: "8ball, rps, slots",
           inline: false,
         },
         {
@@ -59,7 +59,7 @@ module.exports = {
         },
         {
           name: "🧰 Utility",
-          value: "help, avatar, nickname, server, emojiinfo, invites",
+          value: "help, avatar, server, emojiinfo, invites",
           inline: false,
         },
         {
@@ -73,7 +73,7 @@ module.exports = {
       .send(embed3)
       .catch(() =>
         message.inlineReply(
-          "or not... Please turn on your DMs to allow me to send you my commands!"
+          "Hey uhm.. I can't send you a DM if you disabled it, please turn it on!"
         )
       );
     message.author.send(embed2);

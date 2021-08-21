@@ -33,4 +33,4 @@ client.on("message", (message) => {
   }
 });
 
-client.login(process.env.token); // Login Into Discord Bot
+client.login("NzkxNDkyNjk0ODUyNzYzNjQ5.X-P9Aw.5WOqA72aslhMuNaXtKComBiog00"); // Login Into Discord Bot
