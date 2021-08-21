@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
-const superagent = require("superagent");
+const client = require("nekos.life");
+const { sfw } = new client();
 
 module.exports = {
   name: "kitsune",
@@ -7,15 +8,12 @@ module.exports = {
   aliases: ["foxgirl"],
   cooldown: 5,
 
-  async execute(message, args, client) {
-    const { body } = await superagent.get(
-      "https://nekos.life/api/v2/img/fox_girl"
-    ); //lets see wut we went
-
+  async execute(message, args) {
+    link = await sfw.foxGirl();
     const embed = new Discord.MessageEmbed()
       .setColor("E985FF")
-      .setTitle(`Search Query: Kitsune`)
-      .setImage(body.url)
+      .setTitle("Search Query: Foxgirl")
+      .setImage(link.url)
       .setFooter(
         `Requested By: ${message.author.tag}`,
         `${message.author.displayAvatarURL()}`

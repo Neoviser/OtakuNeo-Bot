@@ -24,7 +24,7 @@ module.exports = {
       .setURL(
         "https://discord.com/oauth2/authorize?client_id=791492694852763649&scope=bot&permissions=3154504790"
       )
-      .setAuthor("**Help Menu**")
+      .setAuthor("Help Menu")
       .setFooter("Made by Neo#0442")
       .setTimestamp()
       .setColor("E985FF")
