@@ -42,7 +42,7 @@ module.exports = async (client) => {
 	   Useful if you want to log when it connects
 	   */
 
-  client.user.setActivity(`to 2.1k users! | =help`, {
+  client.user.setActivity(`to n.help | v1.0`, {
     type: "STREAMING",
     url: "https://www.twitch.tv/otakuneo",
   });
