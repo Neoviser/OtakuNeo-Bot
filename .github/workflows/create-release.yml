@@ -1,9 +1,6 @@
 name: Main
 
-on:
-  push:
-    tags:
-      - "v*.*.*"
+on: push
 
 jobs:
   build:
