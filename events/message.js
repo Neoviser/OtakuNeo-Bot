@@ -1,4 +1,4 @@
-const prefix = process.env.PREFIX;
+const prefix = process.env.prefix;
 const { MessageEmbed } = require("discord.js");
 const Discord = require("discord.js");
 const prettyMilliseconds = require("pretty-ms");
