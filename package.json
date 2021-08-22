@@ -7,7 +7,7 @@
     "npm": "7.20.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ."
   },
   "author": "Neo#0442",
   "license": "Apache License 2.0",
