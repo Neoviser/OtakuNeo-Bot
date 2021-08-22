@@ -9,6 +9,7 @@ const handler = require("./handlers/commands.js");
 const fs = require("fs");
 client.commands = new Discord.Collection();
 require("./functions/extendedMessage");
+require("dotenv").config();
 
 handler(client);
 

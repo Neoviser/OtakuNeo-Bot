@@ -11,16 +11,17 @@ Once was originally a private repo, I decided to make it open sourced because wh
 - Roleplay
 - Fun, etc.
 
-If you have forked or cloned this repo, please make sure to install the dependencies:
+If you have forked or cloned this repo, please make sure to install the `dependencies`:
 
 ```
 npm install
 ```
 
-To run the bot, replace the process.env.token with your own. Then either run the included .bat file or do this in console:
+To run the bot, please create your own `.env` file with the following parameters:
 
 ```
-node .
+token=YOUR_BOT_TOKEN
+prefix=YOUR_PREFIX
 ```
 
 ---
