@@ -1,3 +1,3 @@
 @echo off
-nodemon
+node .
 pause
