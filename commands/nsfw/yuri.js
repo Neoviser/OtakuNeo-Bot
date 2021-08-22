@@ -1,21 +1,24 @@
 const Discord = require("discord.js");
 const client = require("nekos.life");
-const { sfw } = new client();
+const { nsfw } = new client();
 
 module.exports = {
-  name: "nekogif",
-  description: "omg a nekogif!",
+  name: "yuri",
+  description: "huh.. yuri",
   cooldown: 5,
 
   async execute(message, args) {
     if (!message.channel.nsfw)
       return message.inlineReply(
-        "Sorry~ You can only use this command in a **`NSFW`** channel! This command is a bit too suggestive to allow in normal channels."
+        "Hey! You can only use this command in a **`NSFW`** channel!"
       );
-    link = await sfw.nekoGif();
+    link = await nsfw.yuri();
     const embed = new Discord.MessageEmbed()
       .setColor("E985FF")
-      .setTitle("Search Query: Neko (GIF)")
+      .setTitle("Search Query: Yuri")
+      .setDescription(
+        "powered by [nekos.life](https://www.npmjs.com/package/nekos.life)"
+      )
       .setImage(link.url)
       .setFooter(
         `Requested By: ${message.author.tag}`,

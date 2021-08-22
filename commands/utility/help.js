@@ -33,38 +33,44 @@ module.exports = {
         {
           name: "🎉 Fun",
           value:
-            "`changemymind, ship, uwu, youtubecomment, darkyoutubecomment, triggered, stickbug, tweet, sudo, clyde, deepfry`",
+            "`changemymind`, `uwu`, `youtubecomment`, `darkyoutubecomment`, `triggered`, `stickbug`, `tweet`, `sudo`, `clyde`, `deepfry`",
           inline: false,
         },
         {
           name: "🎮 Games",
-          value: "`8ball, rps, slots`",
+          value: "`8ball`, `rps`, `slots`",
           inline: false,
         },
         {
           name: "🎭 Roleplay",
-          value: "`hug, cuddle, kill, pat`",
+          value: "`hug`, `cuddle`, `slap`, `pat`, `ship`",
           inline: false,
         },
         {
           name: "💢 Anime",
           value:
-            "`animequotes, animesearch, animecharacter, foxgirl, neko, nekof`",
+            "`animequotes`, `animesearch`, `animecharacter`, `foxgirl`, `neko`, `waifu`, `kemonomimi`",
           inline: false,
         },
         {
           name: "➕ Other",
-          value: "`ascii, emojify, emoji`",
+          value: "`ascii`, `emojify`, `emoji`",
           inline: false,
         },
         {
           name: "🧰 Utility",
-          value: "`help, avatar, server, emojiinfo, invites`",
+          value: "`help`, `avatar`, `server`, `emojiinfo`, `invites`",
           inline: false,
         },
         {
           name: "🌐 Web Search",
-          value: "`djslibrary, mcuser, steam, twitter, wikipedia, youtube`",
+          value:
+            "`djslibrary`, `mcuser`, `steam`, `twitter`, `wikipedia`, `youtube`",
+          inline: false,
+        },
+        {
+          name: "🔞 NSFW",
+          value: "||eroNeko, eroYuri, nsfwNeko, nsfwNekoGif, yuri||",
           inline: false,
         }
       );

@@ -13,6 +13,9 @@ module.exports = {
       .setColor("E985FF")
       .setTitle("Search Query: Neko ")
       .setImage(link.url)
+      .setDescription(
+        "powered by [nekos.life](https://www.npmjs.com/package/nekos.life)"
+      )
       .setFooter(
         `Requested By: ${message.author.tag}`,
         `${message.author.displayAvatarURL()}`
