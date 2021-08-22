@@ -7,7 +7,7 @@
     "npm": "7.20.3"
   },
   "scripts": {
-    "test": "node ."
+    "test": "jest"
   },
   "author": "Neo#0442",
   "license": "Apache License 2.0",
@@ -44,6 +44,7 @@
     "youtube-sr": "^4.1.7"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6"
   }
 }

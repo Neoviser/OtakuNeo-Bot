@@ -29,4 +29,3 @@ jobs:
       - run: npm test
         env:
           token: ${{ secrets.token }}
-      - run: console.log("Success!")
