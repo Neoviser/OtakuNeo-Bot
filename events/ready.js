@@ -43,11 +43,11 @@ module.exports = async (client) => {
 	   */
 
   const statusArray = [
-    "your commands! | @OtakuNeo, LISTENING",
-    "my source code! | @OtakuNeo, WATCHING",
-    "8ball with myself.. | @OtakuNeo, PLAYING",
-    "your anime commands! | @OtakuNeo, WATCHING",
-    "the latest hits! | @OtakuNeo, LISTENING",
+    "nya~! | @OtakuNeo, PLAYING",
+    "javascript! | @OtakuNeo, WATCHING",
+    "8ball~! | @OtakuNeo, PLAYING",
+    "commands. | @OtakuNeo, WATCHING",
+    "suisei! | @OtakuNeo, LISTENING",
   ]; //What you want your statuses to be after puting the status name put a coma and a space and then the type what you want it to be note: please dont to it to STREAMING as you would have to input a twitch link
 
   setInterval(() => {
