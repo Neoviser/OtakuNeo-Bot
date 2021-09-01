@@ -22,7 +22,7 @@ module.exports = {
     const embed3 = new MessageEmbed()
       .setTitle("Invite me~!")
       .setURL(
-        "https://discord.com/oauth2/authorize?client_id=791492694852763649&scope=bot&permissions=3154504790"
+        "https://discord.com/api/oauth2/authorize?client_id=791492694852763649&permissions=140193950785&scope=bot%20applications.commands"
       )
       .setAuthor("Help Menu")
       .setFooter("Made by Neo#0442")

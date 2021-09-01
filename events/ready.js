@@ -42,7 +42,20 @@ module.exports = async (client) => {
 	   Useful if you want to log when it connects
 	   */
 
-  client.user.setActivity(`to n!help | v1.0`, {
-    type: "LISTENING",
-  });
+  const statusArray = [
+    "your commands! | @OtakuNeo, LISTENING",
+    "my source code! | @OtakuNeo, WATCHING",
+    "8ball with myself.. | @OtakuNeo, PLAYING",
+    "your anime commands! | @OtakuNeo, WATCHING",
+    "the latest hits! | @OtakuNeo, LISTENING",
+  ]; //What you want your statuses to be after puting the status name put a coma and a space and then the type what you want it to be note: please dont to it to STREAMING as you would have to input a twitch link
+
+  setInterval(() => {
+    client.user.setStatus("dnd");
+    const random =
+      statusArray[Math.floor(Math.random() * statusArray.length)].split(", ");
+    const status = random[0];
+    const mode = random[1];
+    client.user.setActivity(status, { type: mode });
+  }, 300000); //your time of changing status in miliseconds for example 1 second = 1000 ms
 };
